@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project12.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="side-menu" class="fas fa-bars"></div>
+    <div class="side-bar">
+        <h1 class="heading">Filter images</h1>
+        <div class="box">
+            <h3 class="title">search images :</h3>
+            <input type="text" id="search-box" placeholder="search image..." >
+        </div>
+        <div class="box">
+            <h3 class="title">category :</h3>
+            <div class="category">
+                <div class="btn active" data-category="all">all</div>
+                <div class="btn" data-category="animal">animals</div>
+                <div class="btn" data-category="food">food</div>
+                <div class="btn" data-category="fish">fish</div>
+                <div class="btn" data-category="flower">flower</div>
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="title">type :</h3>
+            <div class="type">
+                <div class="btn active" data-type="all">all type</div>
+                <div class="btn" data-type="jpg">jpg</div>
+                <div class="btn" data-type="png">png</div>
+                <div class="btn" data-type="svg">svg</div>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <h1 class="heading">
+            image gallary
+        </h1>
+        <div class="image-container">
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/35/92/cute-little-chicken-bird-animal-farm-icon-vector-29983592.jpg" alt="" data-cat="animal" data-search="bird animal chick cute">
+            <img src="https://vectormine.com/wp-content/uploads/Cookie.jpg" alt="" data-cat="food" data-search="food vetor cookie">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/852/974/original/cartoon-illustration-isolated-object-fresh-food-vegetable-sweet-corn-vector.jpg" alt="" data-cat="food" data-search="food corn cartoon">
+            <img src="https://cdn11.bigcommerce.com/s-moj8hq5wlh/images/stencil/1280x1280/products/8045/26329/DSC_0223__96486.1681770486.JPG?c=2" alt="" data-cat="fish" data-search="fish animal dolphin">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5d7K5VxG_8c2-5hD5MdCiu1XIpfDNFrg_BQHS6ENzF2Y6ALeYbLuda4a17AZxm8VbnPo&usqp=CAU" alt="" data-cat="animal" data-search="animal squirrel cute">
+            <img src="https://i.pinimg.com/736x/12/4c/b6/124cb63ba58e162054b7764249cb651a.jpg" alt="" data-cat="animal" data-search="animal panda png cartoon">
+            <img src="https://i.pinimg.com/564x/52/66/1c/52661c0445ef4ec2b485b559dfd546b6.jpg" alt="" data-cat="animal" data-search="animal penguine bird cartoon">
+
+            <img src="https://i.pinimg.com/736x/8a/92/91/8a92919023eb73b7ef21914ec572e4ef.jpg" alt="" data-cat="animal" data-search="animal bird cute">
+            <img src="https://w7.pngwing.com/pngs/778/592/png-transparent-minnie-mouse-mickey-mouse-mouse-mammal-animals-cat-like-mammal.png" alt="" data-cat="animal" data-search="animal cat mouse cute png">
+            <img src="https://img.freepik.com/free-vector/aggressive-great-white-shark-cartoon_1308-102349.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1698883200&semt=ais" alt="" data-cat="fish" data-search="animal fish shark vector">
+            <img src="https://www.salisburypediatrics.com/images/additonal_photos/med_orange.jpg" alt="" data-cat="food" data-search="food orange">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/266/826/original/organic-drink-icon-isometric-juice-food-vector.jpg" alt="" data-cat="food" data-search="food vector juice drink">
+            <img src="https://www.clipartmax.com/png/full/133-1333834_cartoon-chicken-leg-download-chicken-as-food.png" alt="" data-cat="food" data-search="food chicken cartoon png">
+            <img src="https://www.southernliving.com/thmb/HZKkETIse33bNfZa7MsG6tQbZoY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2119501_wtenc101-0d3a8ad5f12046d48c6dec00d24bfd30.jpg" alt="" data-cat="food" data-search="food coffee bread">
+
+            <img src="https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-burger-snack-cartoon-illustration-image_1437195.jpg" alt="" data-cat="food" data-search="food burger png cartoon">
+            <img src="https://img.freepik.com/premium-vector/popcorn-vector-illustration-cartoon-style-isolated-white-background_507280-187.jpg?w=2000" alt="" data-cat="food" data-search="food popcorn vector">
+            <img src="https://www.allrecipes.com/thmb/WqWggh6NwG-r8PoeA3OfW908FUY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21014-Good-old-Fashioned-Pancakes-mfs_001-1fa26bcdedc345f182537d95b6cf92d8.jpg" alt="" data-cat="food" data-search="food pancake breakfast">
+            <img src="https://cdn.pixabay.com/photo/2016/02/23/11/50/three-flower-1217421_960_720.png" alt="" data-cat="flower" data-search="flower plants vector">
+            <img src="https://www.eatsamazing.co.uk/wp-content/uploads/2019/03/Cute-Fruit-Flower-Mini-Pancake-Stacks-recipe-this-fun-breakfast-idea-is-perfect-for-Mothers-Day-or-Easter-with-kids.jpg" alt="" data-cat="flower" data-search="flower pancake breakfast">
+            <img src="https://image.shutterstock.com/image-vector/illustration-happy-flower-mascot-butterflies-260nw-142893112.jpg" alt="" data-cat="flower" data-search="flower plants cartoon">
+            <img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fnature24155/MediaObjects/41586_2017_Article_BFnature24155_Fig1_HTML.jpg" alt="" data-cat="flower" data-search="flower plants nature">
+        </div>
+    </div> 
+    <div class="popup-image"><img src="https://cdn3.vectorstock.com/i/1000x1000/35/92/cute-little-chicken-bird-animal-farm-icon-vector-29983592.jpg" alt=""></div>
+    <script src="project12.js"></script>
+</body>
+</html>
